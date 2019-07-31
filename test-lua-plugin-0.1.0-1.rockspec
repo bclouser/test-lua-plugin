@@ -1,8 +1,8 @@
 package = "test-lua-plugin"
-version = "0.1"
+version = "0.1.0-1"
 source = {
    url = "git://github.com/bclouser/test-lua-plugin",
-   tag = "0.1",
+   tag = "v0.1",
 }
 description = {
    summary = "An example kong plugin",
@@ -21,8 +21,8 @@ build = {
    type = "builtin",
    modules = {
       -- Every kong plugin must have these two lua modules
-      ["kong.plugins."..pluginName..".handler"] = "src/handler.lua",
-      ["kong.plugins."..pluginName..".schema"] = "src/schema.lua",
+      ["kong.plugins.test-lua-plugin.handler"] = "src/handler.lua",
+      ["kong.plugins.test-lua-plugin.schema"] = "src/schema.lua",
       -- Add any other lua modules needed for the module here
    },
 }
