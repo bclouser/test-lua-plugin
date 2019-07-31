@@ -2,7 +2,7 @@ package = "test-lua-plugin"
 version = "0.1.0-1"
 source = {
    url = "git://github.com/bclouser/test-lua-plugin",
-   tag = "v0.1",
+   tag = "v0.1.1",
 }
 description = {
    summary = "An example kong plugin",
